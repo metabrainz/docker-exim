@@ -1,3 +1,7 @@
 FROM tianon/exim4
 
-CMD ["tini", "--", "exim", "-bd", "-v", "-q30m"]
+ENV DOMAIN example.org
+
+COPY entrypoint.sh /usr/local/bin/
+
+CMD ["tini", "--", "exim", "-bdf", "-v", "-q30m"]
