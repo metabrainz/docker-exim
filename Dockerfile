@@ -1,6 +1,6 @@
 FROM tianon/exim4
 
-ENV DOMAIN example.org
+ENV DOMAIN=example.org
 
 COPY entrypoint.sh /usr/local/bin/
 
