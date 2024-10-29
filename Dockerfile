@@ -1,3 +1,3 @@
 FROM tianon/exim4
 
-CMD ["tini", "--", "exim", "-bdf", "-v", "-q30m"]
+CMD ["exim", "-bdf", "-v", "-q30m"]
